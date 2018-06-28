@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::placeholder,
+label {
+  color: #72675a;
+  font-size: 0.935em;
+}
+
+input:focus::placeholder {
+  color: #bbb5af;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #e2dedb;
+  color: #b3aca7;
+  margin: 0;
+}
+
+header {
+  margin: 0px 0 25px 0;
+  background: #e2dedb url('../img/modulus.jpg') no-repeat center;
+  background-size: cover;
+  height: 400px;
+  width: 100%
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.texto {
+  border: solid 1px #b3aca7;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(90, 86, 72);
+  padding: 15px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 1.05em;
+  letter-spacing: 1.7px;
+}
+
+form {
+  margin: 50px auto 100px;
+}
+
+.caja {
+font-family: 'Lato', sans-serif;
+font-size: 1.01em;
+width: 45%;
+height: 100%;
+padding: 5px;
+text-align: center;
+background: transparent;
+outline: none;
+color: #726659;
+border: solid 1px #b3aca7;
+border-bottom: none;
+transition: all 0.3s ease-in-out;
+margin: 0 auto;
+}
+
+.input,
+.success,
+.error {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.935em;
+  margin: 0 auto;
+  display: block;
+  width: 45%;
+  min-height: 40px;
+  height: 100%;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+  font-size: 0.9em;
+}
+
+.agregado:hover {
+  font-size: 0.925em;
+}
+
+
+#submit {
+  border: solid 1px #b3aca7;
+}
+    
+.checkbox {
+transform: scale(1.5);
+margin: 5px 10px 5px 5px;
+}
+
+label {
+display: inline-block;
+vertical-align: top;
+margin-top: 2px;
+}
+  
+.agregado {
+  padding: 10px;
+  min-height: 40px;
+  height: 100%;
+  text-align: center;
+}
+  
+.agregado:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+  
+.hidden {
+  display: none;
+}
+  
+.success {
+font-size: 1em;
+padding: 10px;
+padding-top: 15px;
+text-align: center;
+color: #726659;
+border: solid 2px #238100;
+transition: all 0.5s ease-in-out;
+}
+
+.error {
+font-size: 1em;
+padding: 10px;
+padding-top: 15px;
+text-align: center;
+color: #726659;
+border: solid 2px rgb(199, 18, 18);
+transition: all 0.5s ease-in-out;
+}
+  
+.cr {
+display: block;
+font-size: 0.8em;
+text-decoration: none;
+color: #8e8173;
+text-align: right;
+padding: 5px;
+}
+
+
+@media (max-width: 450px) {
+  header {
+    background-position: 65% center;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .texto {
+    font-size: 0.85em;
+    letter-spacing: 1px;
+  }
+  
+  .checkbox {
+    transform: scale(1.2);
+  }
+  
+  form {
+    margin: 20px auto;
+  }
+  
+  .caja,
+  .input,
+  .success,
+  .error,
+  .agregado {
+    width: 95%;
+    font-size: 0.85em;
+  }
+  
+  .cr {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1200px) {
+  header {
+    background-position: 75% center;
+  }
+  
+  .caja,
+  .input,
+  .success,
+  .error,
+  .agregado {
+    width: 55%;
+  }
+  
+  
+}
